@@ -1,0 +1,28 @@
+{
+  "name": "vue-press",
+  "version": "1.0.0",
+  "description": "vue-press",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs",
+      "docs:publish": "yarn run docs:build && cd docs/.vuepress/dist && git init && git add -A && git commit -m 'deploy' && git push -f https://github.com/gaoxc/vue-press.git master:gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoxc/vue-press.git"
+  },
+  "keywords": [],
+  "author": "gaoxingchen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaoxc/vue-press/issues"
+  },
+  "homepage": "https://github.com/gaoxc/vue-press#readme",
+  "devDependencies": {
+    "vuepress": "^0.6.0"
+  }
+}
